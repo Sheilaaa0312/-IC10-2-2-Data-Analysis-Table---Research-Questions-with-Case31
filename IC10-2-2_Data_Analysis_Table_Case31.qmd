@@ -1,0 +1,32 @@
+---
+title: "IC10-2-2: Data Analysis Table – Research Questions with Case 31"
+subtitle: "Employees Federal Credit Union"
+author: "Xueying Luo"
+date: 2026-10-31
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    embed-resources: true
+    number-sections: false
+editor: visual
+---
+
+# Data Analysis Table
+
+| Research question | Variables and measurement | Data analysis strategy | Reason for choosing the test |
+|:-----------------|:-----------------|:-----------------|:-----------------|
+| **R1. Why do people join the credit union?** | Savings-rate opinion (`q7r`); five-point rating scale. | Frequencies, mean and standard deviation; one-sample t-test. | Compares members' average savings-rate rating with a reference value. |
+| **R2. Why do members borrow from other financial institutions?** | Borrowing-rate opinion (`q8r`) and agreement that the credit union's rates are lower (`q30`); five-point rating scales. | Descriptive statistics; one-sample t-tests. | Checks how members rate borrowing costs and whether their average responses differ from a reference value. |
+| **R3. What do members think about credit union employees' proficiency?** | Courtesy (`q3`), helpfulness (`q4`), professionalism (`q5`), and availability (`q6`); five-point agreement scales. | Reliability and factor analysis; descriptive statistics; one-sample t-test using the employee-proficiency score. | Checks whether the four items can be combined, then compares the average employee-proficiency score with a reference value. |
+| **R4a. Do employee-proficiency ratings differ by residence?** | Residence (`q38`: headquarters area or elsewhere), nominal; employee-proficiency score, treated as metric. | Group means and standard deviations; independent-samples t-test. | Compares average employee ratings between two separate groups of members. |
+| **R4b. Does awareness of services differ by residence?** | Residence (`q38`), nominal; awareness of services (`q13r`–`q26r`), ordinal. | Cross-tabulations; chi-square tests of independence. | Checks whether awareness of each service is related to where members live. |
+| **R4c. Do views of operational effectiveness differ by residence?** | Residence (`q38`), nominal; operational questions (`q9`–`q12`, `q31`–`q34`, and `q37`), measured using categorical responses and rating scales. | Descriptive statistics; independent-samples t-tests for metric ratings; chi-square tests of independence for categorical responses. | Uses a test that matches each question's response scale when comparing the two residence groups. |
+| **R5. How aware are members of the credit union's services?** | Service awareness (`q13r`–`q26r`); ordinal categories for awareness and use. | Frequencies and percentages; chi-square goodness-of-fit tests. | Shows how awareness responses are distributed and tests them against a specified expected distribution. |
+| **R6. How do members rate the credit union's operational effectiveness?** | Operational questions (`q9`–`q12`, `q31`–`q34`, and `q37`); categorical responses and rating scales. | Descriptive statistics; chi-square goodness-of-fit tests for categorical questions; one-sample t-tests for metric ratings. | Describes members' views and selects the test based on how each question is measured. |
+
+# Appendix
+
+- GitHub Repository
+- GitHub Pages
