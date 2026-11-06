@@ -15,16 +15,34 @@ editor: visual
 
 # Data Analysis Table
 
-| Research question | Variables and measurement | Data analysis strategy | Reason for choosing the test |
-|:-----------------|:-----------------|:-----------------|:-----------------|
-| **R1. Why do people join the credit union?** | Savings-rate opinion (`q7r`); five-point rating scale. | Frequencies, mean and standard deviation; one-sample t-test. | Compares members' average savings-rate rating with a reference value. |
-| **R2. Why do members borrow from other financial institutions?** | Borrowing-rate opinion (`q8r`) and agreement that the credit union's rates are lower (`q30`); five-point rating scales. | Descriptive statistics; one-sample t-tests. | Checks how members rate borrowing costs and whether their average responses differ from a reference value. |
-| **R3. What do members think about credit union employees' proficiency?** | Courtesy (`q3`), helpfulness (`q4`), professionalism (`q5`), and availability (`q6`); five-point agreement scales. | Reliability and factor analysis; descriptive statistics; one-sample t-test using the employee-proficiency score. | Checks whether the four items can be combined, then compares the average employee-proficiency score with a reference value. |
-| **R4a. Do employee-proficiency ratings differ by residence?** | Residence (`q38`: headquarters area or elsewhere), nominal; employee-proficiency score, treated as metric. | Group means and standard deviations; independent-samples t-test. | Compares average employee ratings between two separate groups of members. |
-| **R4b. Does awareness of services differ by residence?** | Residence (`q38`), nominal; awareness of services (`q13r`–`q26r`), ordinal. | Cross-tabulations; chi-square tests of independence. | Checks whether awareness of each service is related to where members live. |
-| **R4c. Do views of operational effectiveness differ by residence?** | Residence (`q38`), nominal; operational questions (`q9`–`q12`, `q31`–`q34`, and `q37`), measured using categorical responses and rating scales. | Descriptive statistics; independent-samples t-tests for metric ratings; chi-square tests of independence for categorical responses. | Uses a test that matches each question's response scale when comparing the two residence groups. |
-| **R5. How aware are members of the credit union's services?** | Service awareness (`q13r`–`q26r`); ordinal categories for awareness and use. | Frequencies and percentages; chi-square goodness-of-fit tests. | Shows how awareness responses are distributed and tests them against a specified expected distribution. |
-| **R6. How do members rate the credit union's operational effectiveness?** | Operational questions (`q9`–`q12`, `q31`–`q34`, and `q37`); categorical responses and rating scales. | Descriptive statistics; chi-square goodness-of-fit tests for categorical questions; one-sample t-tests for metric ratings. | Describes members' views and selects the test based on how each question is measured. |
+This table outlines the variables, measurement scales, and statistical tests for the research questions and hypotheses in Case 31: Employees Federal Credit Union. The analysis plan uses the questionnaire items and recoded variables from the previous data preparation assignment.
+
+| Hypothesis / Research Question | Constructs and Their Roles | Operationalization | Scale of Measurement | Statistical Test |
+|:---|:---|:---|:---|:---|
+| **R1. Why do people join the credit union?** | Reasons for joining the credit union (descriptive). | Q7 (`q7r`): Opinion about savings rates. | Ordinal rating scale; treated as approximately interval for the t-test. | Descriptive statistics followed by a one-sample t-test against a specified reference value. |
+| **R2. Why do members use other financial institutions when borrowing funds?** | Opinions about borrowing rates and comparison with competitors (descriptive). | Q8 (`q8r`): Borrowing-rate opinion; Q30 (`q30`): Agreement that credit union loan rates are lower than competitors. | Five-point ratings, treated as approximately interval. | Descriptive statistics and one-sample t-tests against specified reference values. |
+| **R3. What are members' attitudes and beliefs about employee proficiency?** | Attitudes toward employee proficiency (descriptive). | Q3–Q6 (`q3`–`q6`); employee proficiency index (`employee_proficiency_index`). | Five-point agreement scales, treated as approximately interval. | Descriptive statistics, reliability and factor analysis, followed by a one-sample t-test using the employee-proficiency index. |
+| **R4a. Do employee-proficiency ratings differ by residence?** | Member residence (IV); employee proficiency (DV). | Q38 (`q38`): Headquarters area or elsewhere; employee proficiency index (`employee_proficiency_index`). | Residence: nominal; employee proficiency: approximately interval. | Descriptive statistics followed by an independent-samples t-test. |
+| **R4b. Does awareness of services differ by residence?** | Member residence (IV); awareness of services (DV). | Q38 (`q38`); Q13–Q26 (`q13r`–`q26r`). | Residence: nominal; service awareness: ordinal. | Two-way cross-tabulations followed by chi-square tests of independence. |
+| **R4c. Do views of operational effectiveness differ by residence?** | Member residence (IV); attitudes toward operational effectiveness (DV). | Q38 (`q38`); Q9 (`q9`), Q10 (`q10r`), Q11–Q12 (`q11`–`q12`), Q31–Q34 (`q31`–`q34`), and Q37 (`q37r`). | Residence: nominal; operational questions: nominal, ordinal, or approximately interval, depending on the item. | Descriptive statistics; independent-samples t-tests for metric ratings and chi-square tests of independence for categorical responses. |
+| **R5. How aware are members of the services offered by the credit union?** | Awareness of credit union services (descriptive). | Q13–Q26 (`q13r`–`q26r`). | Ordinal: unaware, aware but not used, and aware and used. | Descriptive statistics, including frequencies and percentages. |
+| **R6. What are members' attitudes and beliefs about operational effectiveness?** | Attitudes toward operational effectiveness (descriptive). | Q9 (`q9`), Q10 (`q10r`), Q11–Q12 (`q11`–`q12`), Q31–Q34 (`q31`–`q34`), and Q37 (`q37r`). | Nominal, ordinal, and approximately interval, depending on the question. | Descriptive statistics, including frequencies, percentages, means, and standard deviations where appropriate. |
+| **H1. Does awareness of regular share accounts influence members' opinions about how well financial services meet their needs?** | Awareness of regular share accounts (IV); perceived ability of services to meet members' needs (DV). | Q13 (`q13r`): Awareness of regular share accounts; Q33 (`q33`): Agreement that services meet members' needs. | Awareness: ordinal; needs fulfillment: five-point agreement scale, treated as approximately interval for descriptive purposes. | Cross-tabulation followed by a chi-square test of independence to examine the association between the two responses. |
+| **H2. Do members' opinions about credit union borrowing rates differ from their agreement that the rates are lower than competitors?** | Borrowing-rate opinion and agreement about competitive loan rates (two related measures). | Q8 (`q8r`): Borrowing-rate opinion; Q30 (`q30`): Agreement that loan rates are lower than competitors. | Five-point rating scales, treated as approximately interval. | Paired-samples t-test, provided that the two measures are placed on comparable scales. |
+
+# Notes on the Analysis Strategy
+
+The statistical tests were selected based on the research questions, measurement scales, and whether the analysis involves one group, two independent groups, or two related measurements.
+
+For R3 and R4a, I use the employee-proficiency index created from Q3–Q6 in the previous data preparation assignment. The reliability and factor analysis supported combining these four questions into one measure.
+
+For R4b, chi-square tests can be used because the analysis compares categorical awareness responses across two residence groups. The expected frequencies should be checked before interpreting the results.
+
+For R4c and R6, I keep the operational-effectiveness questions separate rather than creating one index. The earlier reliability analysis suggested that Q30–Q34 do not consistently measure a single construct. Different statistical tests may be appropriate depending on each question's measurement scale.
+
+For H1, the chi-square test examines whether awareness of regular share accounts is associated with opinions about meeting members' needs. It does not establish a causal influence.
+
+For H2, the paired-samples t-test is considered because the same members answered both questions. However, Q8 and Q30 have different wording and interpretations, so their scores must be checked for comparability before applying this test.
 
 # Appendix
 

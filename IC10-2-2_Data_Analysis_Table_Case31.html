@@ -2178,6 +2178,7 @@ vertical-align: -.125em;
    
   <ul class="collapse">
   <li><a href="#data-analysis-table" id="toc-data-analysis-table" class="nav-link active" data-scroll-target="#data-analysis-table">Data Analysis Table</a></li>
+  <li><a href="#notes-on-the-analysis-strategy" id="toc-notes-on-the-analysis-strategy" class="nav-link" data-scroll-target="#notes-on-the-analysis-strategy">Notes on the Analysis Strategy</a></li>
   <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
   </ul>
 </nav>
@@ -2218,72 +2219,106 @@ vertical-align: -.125em;
 
 <section id="data-analysis-table" class="level1">
 <h1>Data Analysis Table</h1>
+<p>This table outlines the variables, measurement scales, and statistical tests for the research questions and hypotheses in Case 31: Employees Federal Credit Union. The analysis plan uses the questionnaire items and recoded variables from the previous data preparation assignment.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Research question</th>
-<th style="text-align: left;">Variables and measurement</th>
-<th style="text-align: left;">Data analysis strategy</th>
-<th style="text-align: left;">Reason for choosing the test</th>
+<th style="text-align: left;">Hypothesis / Research Question</th>
+<th style="text-align: left;">Constructs and Their Roles</th>
+<th style="text-align: left;">Operationalization</th>
+<th style="text-align: left;">Scale of Measurement</th>
+<th style="text-align: left;">Statistical Test</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><strong>R1. Why do people join the credit union?</strong></td>
-<td style="text-align: left;">Savings-rate opinion (<code>q7r</code>); five-point rating scale.</td>
-<td style="text-align: left;">Frequencies, mean and standard deviation; one-sample t-test.</td>
-<td style="text-align: left;">Compares members’ average savings-rate rating with a reference value.</td>
+<td style="text-align: left;">Reasons for joining the credit union (descriptive).</td>
+<td style="text-align: left;">Q7 (<code>q7r</code>): Opinion about savings rates.</td>
+<td style="text-align: left;">Ordinal rating scale; treated as approximately interval for the t-test.</td>
+<td style="text-align: left;">Descriptive statistics followed by a one-sample t-test against a specified reference value.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>R2. Why do members borrow from other financial institutions?</strong></td>
-<td style="text-align: left;">Borrowing-rate opinion (<code>q8r</code>) and agreement that the credit union’s rates are lower (<code>q30</code>); five-point rating scales.</td>
-<td style="text-align: left;">Descriptive statistics; one-sample t-tests.</td>
-<td style="text-align: left;">Checks how members rate borrowing costs and whether their average responses differ from a reference value.</td>
+<td style="text-align: left;"><strong>R2. Why do members use other financial institutions when borrowing funds?</strong></td>
+<td style="text-align: left;">Opinions about borrowing rates and comparison with competitors (descriptive).</td>
+<td style="text-align: left;">Q8 (<code>q8r</code>): Borrowing-rate opinion; Q30 (<code>q30</code>): Agreement that credit union loan rates are lower than competitors.</td>
+<td style="text-align: left;">Five-point ratings, treated as approximately interval.</td>
+<td style="text-align: left;">Descriptive statistics and one-sample t-tests against specified reference values.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>R3. What do members think about credit union employees’ proficiency?</strong></td>
-<td style="text-align: left;">Courtesy (<code>q3</code>), helpfulness (<code>q4</code>), professionalism (<code>q5</code>), and availability (<code>q6</code>); five-point agreement scales.</td>
-<td style="text-align: left;">Reliability and factor analysis; descriptive statistics; one-sample t-test using the employee-proficiency score.</td>
-<td style="text-align: left;">Checks whether the four items can be combined, then compares the average employee-proficiency score with a reference value.</td>
+<td style="text-align: left;"><strong>R3. What are members’ attitudes and beliefs about employee proficiency?</strong></td>
+<td style="text-align: left;">Attitudes toward employee proficiency (descriptive).</td>
+<td style="text-align: left;">Q3–Q6 (<code>q3</code>–<code>q6</code>); employee proficiency index (<code>employee_proficiency_index</code>).</td>
+<td style="text-align: left;">Five-point agreement scales, treated as approximately interval.</td>
+<td style="text-align: left;">Descriptive statistics, reliability and factor analysis, followed by a one-sample t-test using the employee-proficiency index.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>R4a. Do employee-proficiency ratings differ by residence?</strong></td>
-<td style="text-align: left;">Residence (<code>q38</code>: headquarters area or elsewhere), nominal; employee-proficiency score, treated as metric.</td>
-<td style="text-align: left;">Group means and standard deviations; independent-samples t-test.</td>
-<td style="text-align: left;">Compares average employee ratings between two separate groups of members.</td>
+<td style="text-align: left;">Member residence (IV); employee proficiency (DV).</td>
+<td style="text-align: left;">Q38 (<code>q38</code>): Headquarters area or elsewhere; employee proficiency index (<code>employee_proficiency_index</code>).</td>
+<td style="text-align: left;">Residence: nominal; employee proficiency: approximately interval.</td>
+<td style="text-align: left;">Descriptive statistics followed by an independent-samples t-test.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>R4b. Does awareness of services differ by residence?</strong></td>
-<td style="text-align: left;">Residence (<code>q38</code>), nominal; awareness of services (<code>q13r</code>–<code>q26r</code>), ordinal.</td>
-<td style="text-align: left;">Cross-tabulations; chi-square tests of independence.</td>
-<td style="text-align: left;">Checks whether awareness of each service is related to where members live.</td>
+<td style="text-align: left;">Member residence (IV); awareness of services (DV).</td>
+<td style="text-align: left;">Q38 (<code>q38</code>); Q13–Q26 (<code>q13r</code>–<code>q26r</code>).</td>
+<td style="text-align: left;">Residence: nominal; service awareness: ordinal.</td>
+<td style="text-align: left;">Two-way cross-tabulations followed by chi-square tests of independence.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>R4c. Do views of operational effectiveness differ by residence?</strong></td>
-<td style="text-align: left;">Residence (<code>q38</code>), nominal; operational questions (<code>q9</code>–<code>q12</code>, <code>q31</code>–<code>q34</code>, and <code>q37</code>), measured using categorical responses and rating scales.</td>
-<td style="text-align: left;">Descriptive statistics; independent-samples t-tests for metric ratings; chi-square tests of independence for categorical responses.</td>
-<td style="text-align: left;">Uses a test that matches each question’s response scale when comparing the two residence groups.</td>
+<td style="text-align: left;">Member residence (IV); attitudes toward operational effectiveness (DV).</td>
+<td style="text-align: left;">Q38 (<code>q38</code>); Q9 (<code>q9</code>), Q10 (<code>q10r</code>), Q11–Q12 (<code>q11</code>–<code>q12</code>), Q31–Q34 (<code>q31</code>–<code>q34</code>), and Q37 (<code>q37r</code>).</td>
+<td style="text-align: left;">Residence: nominal; operational questions: nominal, ordinal, or approximately interval, depending on the item.</td>
+<td style="text-align: left;">Descriptive statistics; independent-samples t-tests for metric ratings and chi-square tests of independence for categorical responses.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>R5. How aware are members of the credit union’s services?</strong></td>
-<td style="text-align: left;">Service awareness (<code>q13r</code>–<code>q26r</code>); ordinal categories for awareness and use.</td>
-<td style="text-align: left;">Frequencies and percentages; chi-square goodness-of-fit tests.</td>
-<td style="text-align: left;">Shows how awareness responses are distributed and tests them against a specified expected distribution.</td>
+<td style="text-align: left;"><strong>R5. How aware are members of the services offered by the credit union?</strong></td>
+<td style="text-align: left;">Awareness of credit union services (descriptive).</td>
+<td style="text-align: left;">Q13–Q26 (<code>q13r</code>–<code>q26r</code>).</td>
+<td style="text-align: left;">Ordinal: unaware, aware but not used, and aware and used.</td>
+<td style="text-align: left;">Descriptive statistics, including frequencies and percentages.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>R6. How do members rate the credit union’s operational effectiveness?</strong></td>
-<td style="text-align: left;">Operational questions (<code>q9</code>–<code>q12</code>, <code>q31</code>–<code>q34</code>, and <code>q37</code>); categorical responses and rating scales.</td>
-<td style="text-align: left;">Descriptive statistics; chi-square goodness-of-fit tests for categorical questions; one-sample t-tests for metric ratings.</td>
-<td style="text-align: left;">Describes members’ views and selects the test based on how each question is measured.</td>
+<td style="text-align: left;"><strong>R6. What are members’ attitudes and beliefs about operational effectiveness?</strong></td>
+<td style="text-align: left;">Attitudes toward operational effectiveness (descriptive).</td>
+<td style="text-align: left;">Q9 (<code>q9</code>), Q10 (<code>q10r</code>), Q11–Q12 (<code>q11</code>–<code>q12</code>), Q31–Q34 (<code>q31</code>–<code>q34</code>), and Q37 (<code>q37r</code>).</td>
+<td style="text-align: left;">Nominal, ordinal, and approximately interval, depending on the question.</td>
+<td style="text-align: left;">Descriptive statistics, including frequencies, percentages, means, and standard deviations where appropriate.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>H1. Does awareness of regular share accounts influence members’ opinions about how well financial services meet their needs?</strong></td>
+<td style="text-align: left;">Awareness of regular share accounts (IV); perceived ability of services to meet members’ needs (DV).</td>
+<td style="text-align: left;">Q13 (<code>q13r</code>): Awareness of regular share accounts; Q33 (<code>q33</code>): Agreement that services meet members’ needs.</td>
+<td style="text-align: left;">Awareness: ordinal; needs fulfillment: five-point agreement scale, treated as approximately interval for descriptive purposes.</td>
+<td style="text-align: left;">Cross-tabulation followed by a chi-square test of independence to examine the association between the two responses.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>H2. Do members’ opinions about credit union borrowing rates differ from their agreement that the rates are lower than competitors?</strong></td>
+<td style="text-align: left;">Borrowing-rate opinion and agreement about competitive loan rates (two related measures).</td>
+<td style="text-align: left;">Q8 (<code>q8r</code>): Borrowing-rate opinion; Q30 (<code>q30</code>): Agreement that loan rates are lower than competitors.</td>
+<td style="text-align: left;">Five-point rating scales, treated as approximately interval.</td>
+<td style="text-align: left;">Paired-samples t-test, provided that the two measures are placed on comparable scales.</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="notes-on-the-analysis-strategy" class="level1">
+<h1>Notes on the Analysis Strategy</h1>
+<p>The statistical tests were selected based on the research questions, measurement scales, and whether the analysis involves one group, two independent groups, or two related measurements.</p>
+<p>For R3 and R4a, I use the employee-proficiency index created from Q3–Q6 in the previous data preparation assignment. The reliability and factor analysis supported combining these four questions into one measure.</p>
+<p>For R4b, chi-square tests can be used because the analysis compares categorical awareness responses across two residence groups. The expected frequencies should be checked before interpreting the results.</p>
+<p>For R4c and R6, I keep the operational-effectiveness questions separate rather than creating one index. The earlier reliability analysis suggested that Q30–Q34 do not consistently measure a single construct. Different statistical tests may be appropriate depending on each question’s measurement scale.</p>
+<p>For H1, the chi-square test examines whether awareness of regular share accounts is associated with opinions about meeting members’ needs. It does not establish a causal influence.</p>
+<p>For H2, the paired-samples t-test is considered because the same members answered both questions. However, Q8 and Q30 have different wording and interpretations, so their scores must be checked for comparability before applying this test.</p>
 </section>
 <section id="appendix" class="level1">
 <h1>Appendix</h1>
